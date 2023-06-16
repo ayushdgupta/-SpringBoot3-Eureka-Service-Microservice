@@ -21,3 +21,10 @@ server:
   port: 8761
 ```
 
+### Flow Diagram
+![Our Eureka Server Flow Diagram](src/main/resources/images/FlowDiagram.png)
+
+1. Microservices registered to this eureka server -
+    1. [Hotel microservice](https://github.com/ayushdgupta/SpringBoot3-Hotel-Microservice).
+    2. [User microservice](https://github.com/ayushdgupta/SpringBoot3-User-Microservice/tree/master).
+    3. [Rating microservice](https://github.com/ayushdgupta/SpringBoot3-Rating-Microservice).
