@@ -1,0 +1,9 @@
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false           # these two properties defined and set to false otherwise this service
+    fetch-registry: false                 # itself will be registered with eureka server, but we don't want this,
+                                          # we want to register other services on this server.
+server:
+  port: 8761
