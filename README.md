@@ -1,7 +1,7 @@
 ### Eureka Server / Service Registry
 
 1. Here we created one application where we included following two dependencies to appoint this service as a eureka server.
-```
+```groovy
 implementation 'org.springframework.cloud:spring-cloud-starter'
 implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'  
 ```
@@ -9,7 +9,7 @@ implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-se
 2. Apart from adding above two dependencies we need to add few other configurations as well like Dependency management and spring cloud version.
 3. Apply **@EnableEurekaServer** in our main class.
 4. Few other properties in application.yaml file -
-```
+```yaml
 eureka:
   instance:
     hostname: localhost
@@ -28,3 +28,4 @@ server:
     1. [Hotel microservice](https://github.com/ayushdgupta/SpringBoot3-Hotel-Microservice).
     2. [User microservice](https://github.com/ayushdgupta/SpringBoot3-User-Microservice/tree/master).
     3. [Rating microservice](https://github.com/ayushdgupta/SpringBoot3-Rating-Microservice).
+    4. [API Gateway](https://github.com/ayushdgupta/SpringBoot3-APIGateway-Microservice)
