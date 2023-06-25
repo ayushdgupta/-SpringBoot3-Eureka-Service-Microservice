@@ -20,6 +20,11 @@ eureka:
 server:
   port: 8761
 ```
+5. Before regitering the microservices with eureka server, if any microservice want to contact anyone then they
+need to use their host and IP Address (e.g. localhost:8080/rating), but after registering our microservices with Eureka server
+there is no need for them to contact with each other using above props, they can simply use their application name.
+because application name is autoatically tied-up with those by eureka server (e.g. http://Config-Server) these things we
+can verify in the logs of eureka server as well when we start this server.
 
 ### Flow Diagram
 ![Our Eureka Server Flow Diagram](src/main/resources/images/FlowDiagram.png)
